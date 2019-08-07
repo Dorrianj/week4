@@ -1,4 +1,4 @@
-package lastDay;
+package lastDay;	
 
 import java.util.Scanner;
 
@@ -12,8 +12,9 @@ public class user {
 		
 		String name = "";
 		String color = "";
-		String age = "";
-		
+		int age = 0;
+		int green= 10;
+		int age1 = 16;
 		System.out.println("welcome");
 		
 		System.out.println("enter your name");
@@ -23,31 +24,37 @@ public class user {
 		color = sncr.next();
 		
 		System.out.println("how old are you?");
-		age = sncr.next();
+		age = sncr.nextInt();
 		
 		System.out.println("my name is " + name);
 		System.out.println("my favorite color is " + color);
 		System.out.println("my age is " + age);
 		
-		System.out.println("watch this majic trick");
+		System.out.println("enter your age");
+
 		
-		for( int i = 2; i < 1000; i *= 2) {
-			System.out.println(i);
-		}
-			System.out.println("Here's our while loop");
+		for ( int x = age; x<= 100; x++){
 			
-			System.out.println("Flipped loop");
-				int k = 5;
-				int d = 15;
-				
-				while(d > 5) {
+			
+			 if( x%3 ==0 && x%5 == 0) {
+					System.out.println("color buzz");
 					
-					k++;
-					d--;
-				}
-					System.out.println(k);
-					System.out.println(d);
-			}
-		}
+				}else if( x%5 == 0) {
+						System.out.println("color");
+						
+				}else if( x%3 == 0) {
+					System.out.println("buzz"); 
+						
+					}
+					System.out.println(x);
 
+			
+			
+	
+		
+			
+	}
 
+}
+
+}
